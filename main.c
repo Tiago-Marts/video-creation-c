@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(void){
+    //Informações do tamanho da imagem (Default: 960x540)
     const int width = 16 * 60;
     const int height = 9 * 60;
     const int fps = 30;
@@ -13,7 +14,7 @@ int main(void){
         const char* output_path = buf;
         FILE *f = fopen(output_path, "wb");
     
-        //PPM format specification
+        //Especificação PPM
         fprintf(f, "P6\n");
         fprintf(f, "%d\n", width);
         fprintf(f, "%d\n", height);
